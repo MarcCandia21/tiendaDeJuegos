@@ -1,5 +1,5 @@
 package tiendaJuegos;
 
-public class Genre {
+public enum Genre {
 
 }
