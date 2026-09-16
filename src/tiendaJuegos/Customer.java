@@ -22,6 +22,7 @@ public double getBalance() {
 
 public double añadirSado(double añadir) {
 	if(añadir > 0) {
+		System.out.println("Saldo añadido correctamente, total de : " +balance+añadir );
 		return balance + añadir;
 	}
 	
