@@ -1,21 +1,21 @@
 package tiendaJuegos;
 
 public class Compra {
-private String purchase;
+private Customer customers;
 private Game game;
 private int quantity;
 private double totalPrice;
 
-public Compra(String purchase, Game game, int quantity, double totalPrice) {
+public Compra(Customer customers, Game game, int quantity, double totalPrice) {
 	super();
-	this.purchase = purchase;
+	this.customers= customers;
 	this.game = game;
 	this.quantity = quantity;
 	this.totalPrice = game.getPrice() * quantity;
 }
 
-public String getPurchase() {
-	return purchase;
+public Customer getCustomers() {
+	return customers;
 }
 
 public Game getGame() {
@@ -32,7 +32,7 @@ public double getTotalPrice() {
 
 @Override
 public String toString() {
-	return "Compras. Cliente= " + purchase + ", Juego= " + game + ", Cantidad= " + quantity + ", totalPrice=" + totalPrice
+	return "Compras. Cliente= " + customers + ", Juego= " + game + ", Cantidad= " + quantity + ", totalPrice=" + totalPrice
 			+ "]";
 }
 

@@ -63,7 +63,7 @@ public class Store {
 		}
 		
 	}
-	//8.6 Comprobar si el cliente existe
+	//8.6 Comprar videoJuegos
 	public void comprarJuegos(int id, int id2, int cantidad, double saldo) {
 		boolean clienteExiste = false;
 		boolean juegoExiste = false;
@@ -100,5 +100,10 @@ public class Store {
 		}
 		
 		Boolean compraValida = (clienteExiste && juegoExiste && stockValido && saldoSuficiente) ? false : true;
+		if(compraValida) {
+			 purchase.add(new Compra(null, null, cantidad, saldo));
+		}else {
+			System.out.println("Compra no valida");
+		}
 	}
 }
