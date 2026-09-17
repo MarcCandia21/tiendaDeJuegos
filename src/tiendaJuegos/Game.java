@@ -27,6 +27,9 @@ public void setStock(int stock) {
 	this.stock = stock;
 }
 
+public String gettitle() {
+	return title;
+}
 
 public int getId() {
 	return id;

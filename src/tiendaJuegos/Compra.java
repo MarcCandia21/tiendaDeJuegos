@@ -1,12 +1,12 @@
 package tiendaJuegos;
 
-public class compra {
+public class Compra {
 private String purchase;
 private Game game;
 private int quantity;
 private double totalPrice;
 
-public compra(String purchase, Game game, int quantity, double totalPrice) {
+public Compra(String purchase, Game game, int quantity, double totalPrice) {
 	super();
 	this.purchase = purchase;
 	this.game = game;
